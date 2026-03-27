@@ -29,7 +29,3 @@ texture = SubResource("CompressedTexture2D_wtcfe")
 z_index = -1
 position = Vector2(307, 65)
 texture = ExtResource("1_wtcfe")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1949246997]
-position = Vector2(383, 66)
-scale = Vector2(0.915, 0.915)
