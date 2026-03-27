@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://c6vnl3khac3an"]
 
+[ext_resource type="Script" uid="uid://cl7fwar2uddk1" path="res://character_body_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://cinlag1cqwr30" path="res://bleh.png" id="1_wtcfe"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y32ns"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wtcfe"]
@@ -8,12 +11,25 @@ load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.cte
 [node name="Node2D" type="Node2D" unique_id=286766336]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=921383542]
+position = Vector2(490, 124.99999)
+scale = Vector2(3.4, 3.4)
+script = ExtResource("1_0e48y")
+speed = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=276269827]
-rotation = -0.8150688
+rotation = -6.2831855
 scale = Vector2(1.24, 1.24)
 shape = SubResource("RectangleShape2D_y32ns")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=528496534]
 scale = Vector2(0.19, 0.19)
 texture = SubResource("CompressedTexture2D_wtcfe")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=528255943]
+z_index = -1
+position = Vector2(307, 65)
+texture = ExtResource("1_wtcfe")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1949246997]
+position = Vector2(383, 66)
+scale = Vector2(0.915, 0.915)
